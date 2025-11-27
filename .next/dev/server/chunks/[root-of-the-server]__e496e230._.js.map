@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///home/nightvoid/AserMeet/app/api/auth/error/route.ts"],"sourcesContent":["import { type NextRequest, NextResponse } from \"next/server\"\n\nexport async function GET(request: NextRequest) {\n  const error = request.nextUrl.searchParams.get(\"error\")\n\n  return NextResponse.json(\n    {\n      error: error || \"Authentication failed\",\n      message: \"Please try signing in again.\",\n    },\n    { status: 400 },\n  )\n}\n"],"names":[],"mappings":";;;;AAAA;;AAEO,eAAe,IAAI,OAAoB;IAC5C,MAAM,QAAQ,QAAQ,OAAO,CAAC,YAAY,CAAC,GAAG,CAAC;IAE/C,OAAO,gJAAY,CAAC,IAAI,CACtB;QACE,OAAO,SAAS;QAChB,SAAS;IACX,GACA;QAAE,QAAQ;IAAI;AAElB"}}]
+}
